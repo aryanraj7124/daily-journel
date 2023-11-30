@@ -38,6 +38,8 @@ app.get("/compose",function(req,res){
   res.render("compose");
 });
 
+
+
 app.post("/compose",function(req,res){
 
 //  console.log(req.body.postTitle);
@@ -50,6 +52,10 @@ app.post("/compose",function(req,res){
   res.redirect("/");
 
 });
+
+// app.get("/signup",function(req,res){
+//   res.render("signup");
+// });
 
 app.get("/posts/:postname",function(req,res)
 {
